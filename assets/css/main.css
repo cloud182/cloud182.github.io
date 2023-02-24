@@ -727,7 +727,7 @@ ul {
 }
 
 	ul li {
-		padding: 0;
+		padding-right: 1em;
 	}
 
 	ul.alt {
