@@ -717,7 +717,7 @@ ol {
 }
 
 	ol li {
-		padding-left: 0.25em;
+		padding: 0;
 	}
 
 ul {
@@ -727,7 +727,7 @@ ul {
 }
 
 	ul li {
-		padding-left: 0.5em;
+		padding: 0;
 	}
 
 	ul.alt {
@@ -737,7 +737,7 @@ ul {
 
 		ul.alt li {
 			border-top: solid 1px #ffffff;
-			padding: 0.5em 0;
+			padding: 0 0;
 		}
 
 			ul.alt li:first-child {
