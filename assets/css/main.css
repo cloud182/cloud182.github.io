@@ -1323,6 +1323,12 @@ button {
 			line-height: 2;
 		}
 
+		#header .content .inner img.mugshot {
+			width: 280px;
+			height: 300px;
+			object-fit: cover;
+		}
+
 	#header nav ul {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -1346,7 +1352,8 @@ button {
 
 			#header nav ul li a {
 				display: block;
-				min-width: 7.5rem;
+				min-width: 9.75rem;
+				text-align: center;
 				height: 2.75rem;
 				line-height: 2.75rem;
 				padding: 0 1.25rem 0 1.45rem;
@@ -1486,6 +1493,39 @@ button {
 			#header nav.use-middle:after {
 				display: none;
 			}
+
+	}
+
+	@media screen and (max-width: 600px) and (min-width: 481px) {
+
+		#header nav ul {
+			-moz-flex-direction: column;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			min-width: 10rem;
+			max-width: 100%;
+		}
+
+			#header nav ul li {
+				border-left: 0;
+				border-top: solid 1px #ffffff;
+			}
+
+				#header nav ul li:first-child {
+					border-top: 0;
+				}
+
+				#header nav ul li a {
+					height: 3rem;
+					line-height: 3rem;
+					min-width: 0;
+					width: 100%;
+				}
+
+		#header nav.use-middle:after {
+			display: none;
+		}
 
 	}
 
